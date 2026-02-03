@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int age = 20;
+        float marks = 85.5f;
+        char grade = 'A';
+        string name = "Uddhav";
+
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Age: " + age);
+        Console.WriteLine("Marks: " + marks);
+        Console.WriteLine("Grade: " + grade);
+    }
+}
