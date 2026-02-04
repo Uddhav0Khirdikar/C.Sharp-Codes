@@ -1,0 +1,10 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string text = "CSharp";
+        Console.WriteLine(text.Length);
+    }
+}
