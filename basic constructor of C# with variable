@@ -1,0 +1,16 @@
+using System;
+
+class Student
+{
+    string name;
+    public Student()
+    {
+        name = "Uddhav";
+        Console.WriteLine("Name is: " + name);
+    }
+
+    static void Main(string[] args)
+    {
+        Student s1 = new Student();
+    }
+}
