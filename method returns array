@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static int[] GetNumbers()
+    {
+        int[] arr = { 10, 20, 30 };
+        return arr;
+    }
+
+    static void Main()
+    {
+        int[] numbers = GetNumbers();
+        foreach (int n in numbers)
+        {
+            Console.WriteLine(n);
+        }
+    }
+}
