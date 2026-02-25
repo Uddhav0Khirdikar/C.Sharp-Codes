@@ -1,0 +1,18 @@
+using System;
+
+class Student
+{
+    public void ShowName()
+    {
+        Console.WriteLine("Uddhav Sir");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Student s = new Student();
+        s.ShowName();
+    }
+}
