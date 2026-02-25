@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Increase(ref int number)
+    {
+        number += 10;
+    }
+
+    static void Main()
+    {
+        int value = 5;
+        Increase(ref value);
+        Console.WriteLine("Value: " + value);
+    }
+}
