@@ -1,0 +1,13 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a sentence: ");
+        string text = Console.ReadLine();
+
+        string[] words = text.Split(' ');
+        Console.WriteLine("Total words: " + words.Length);
+    }
+}
