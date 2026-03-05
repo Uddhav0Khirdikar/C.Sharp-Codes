@@ -1,0 +1,31 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Random random = new Random();
+        int number = random.Next(1, 101);
+
+        Console.WriteLine("Guess the number (1-100)");
+
+        while (true)
+        {
+            int guess = Convert.ToInt32(Console.ReadLine());
+
+            if (guess == number)
+            {
+                Console.WriteLine("Correct!");
+                break;
+            }
+            else if (guess > number)
+            {
+                Console.WriteLine("Too High");
+            }
+            else
+            {
+                Console.WriteLine("Too Low");
+            }
+        }
+    }
+}
