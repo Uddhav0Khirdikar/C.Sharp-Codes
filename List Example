@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<string> names = new List<string>();
+
+        names.Add("Sanket");
+        names.Add("Majel Prasad");
+
+        foreach (string name in names)
+        {
+            Console.WriteLine(name);
+        }
+    }
+}
