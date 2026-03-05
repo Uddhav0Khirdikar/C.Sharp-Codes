@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string text = "programming";
+
+        for (int i = 0; i < text.Length; i++)
+        {
+            int count = 1;
+
+            for (int j = i + 1; j < text.Length; j++)
+            {
+                if (text[i] == text[j])
+                {
+                    count++;
+                }
+            }
+
+            Console.WriteLine(text[i] + " : " + count);
+        }
+    }
+}
