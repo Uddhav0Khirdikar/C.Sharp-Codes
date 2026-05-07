@@ -1,0 +1,16 @@
+using System;
+
+class CurrencyConverter
+{
+    static void Main()
+    {
+        double rupees, dollars;
+
+        Console.Write("Enter Amount in Rupees: ");
+        rupees = Convert.ToDouble(Console.ReadLine());
+
+        dollars = rupees / 83.0;
+
+        Console.WriteLine("Amount in Dollars: $" + dollars);
+    }
+}
