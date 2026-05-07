@@ -1,0 +1,65 @@
+using System;
+
+class ATM
+{
+    static void Main()
+    {
+        int balance = 10000;
+        int choice, amount;
+
+        do
+        {
+            Console.WriteLine("\n===== ATM MENU =====");
+            Console.WriteLine("1. Check Balance");
+            Console.WriteLine("2. Deposit Money");
+            Console.WriteLine("3. Withdraw Money");
+            Console.WriteLine("4. Exit");
+            Console.Write("Enter your choice: ");
+
+            choice = Convert.ToInt32(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("Current Balance: " + balance);
+                    break;
+
+                case 2:
+                    Console.Write("Enter amount to deposit: ");
+                    amount = Convert.ToInt32(Console.ReadLine());
+
+                    balance += amount;
+
+                    Console.WriteLine("Amount Deposited Successfully!");
+                    Console.WriteLine("Updated Balance: " + balance);
+                    break;
+
+                case 3:
+                    Console.Write("Enter amount to withdraw: ");
+                    amount = Convert.ToInt32(Console.ReadLine());
+
+                    if (amount <= balance)
+                    {
+                        balance -= amount;
+
+                        Console.WriteLine("Withdrawal Successful!");
+                        Console.WriteLine("Remaining Balance: " + balance);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Insufficient Balance!");
+                    }
+                    break;
+
+                case 4:
+                    Console.WriteLine("Thank You for Using ATM!");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid Choice!");
+                    break;
+            }
+
+        } while (choice != 4);
+    }
+}
