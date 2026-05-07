@@ -1,0 +1,26 @@
+using System;
+
+class BMICalculator
+{
+    static void Main()
+    {
+        double weight, height, bmi;
+
+        Console.Write("Enter Weight (kg): ");
+        weight = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter Height (meters): ");
+        height = Convert.ToDouble(Console.ReadLine());
+
+        bmi = weight / (height * height);
+
+        Console.WriteLine("BMI = " + bmi);
+
+        if (bmi < 18.5)
+            Console.WriteLine("Underweight");
+        else if (bmi < 25)
+            Console.WriteLine("Normal Weight");
+        else
+            Console.WriteLine("Overweight");
+    }
+}
