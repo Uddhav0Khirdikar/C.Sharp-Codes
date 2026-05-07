@@ -1,0 +1,19 @@
+using System;
+
+class AgeCalculator
+{
+    static void Main()
+    {
+        int birthYear, currentYear, age;
+
+        Console.Write("Enter Birth Year: ");
+        birthYear = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter Current Year: ");
+        currentYear = Convert.ToInt32(Console.ReadLine());
+
+        age = currentYear - birthYear;
+
+        Console.WriteLine("Your Age is: " + age);
+    }
+}
