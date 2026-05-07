@@ -1,0 +1,13 @@
+using System;
+
+class OTPGenerator
+{
+    static void Main()
+    {
+        Random random = new Random();
+
+        int otp = random.Next(1000, 9999);
+
+        Console.WriteLine("Generated OTP: " + otp);
+    }
+}
