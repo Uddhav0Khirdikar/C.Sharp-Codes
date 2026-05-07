@@ -1,0 +1,16 @@
+using System;
+
+class DecimalToBinary
+{
+    static void Main()
+    {
+        int number;
+
+        Console.Write("Enter Decimal Number: ");
+        number = Convert.ToInt32(Console.ReadLine());
+
+        string binary = Convert.ToString(number, 2);
+
+        Console.WriteLine("Binary Value: " + binary);
+    }
+}
